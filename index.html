@@ -2,10 +2,127 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi web personal</title>
+  <title>Web personal retro</title>
+
+  <style>
+    /* ===== RESET BÁSICO ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "MS Sans Serif", Tahoma, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background-color: #dbe9f4; /* azul suave */
+      background-image: linear-gradient(45deg, #dbe9f4 25%, #cfe1ef 25%, #cfe1ef 50%, #dbe9f4 50%, #dbe9f4 75%, #cfe1ef 75%, #cfe1ef 100%);
+      background-size: 40px 40px;
+      overflow: hidden;
+    }
+
+    /* ===== VENTANA ===== */
+    .window {
+      position: absolute;
+      top: 80px;
+      left: 80px;
+      width: 420px;
+      background: #f7fbff;
+      border: 2px solid #9c9c9c;
+      box-shadow: 4px 4px 0 #6f6f6f;
+    }
+
+    /* ===== BARRA SUPERIOR ===== */
+    .title-bar {
+      background: linear-gradient(to right, #6fa3c7, #8fbdd9);
+      color: white;
+      padding: 6px 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .title-bar .buttons {
+      display: flex;
+      gap: 4px;
+    }
+
+    .btn {
+      width: 14px;
+      height: 14px;
+      background: #dcdcdc;
+      border: 1px solid #666;
+      text-align: center;
+      font-size: 10px;
+      line-height: 12px;
+      cursor: default;
+    }
+
+    /* ===== CONTENIDO ===== */
+    .content {
+      padding: 12px;
+      font-size: 14px;
+      color: #222;
+    }
+
+    .content p {
+      margin-bottom: 10px;
+    }
+    /* ===== LINKS ESTILO RETRO ===== */
+    .link {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+  </style>
 </head>
 <body>
-  <h1>Hola 👋</h1>
-  <p>Mi web ya está online.</p>
+
+  <!-- VENTANA ABOUT -->
+  <div class="window">
+    <div class="title-bar">
+      <span>About.txt - Word</span>
+      <div class="buttons">
+        <div class="btn">—</div>
+        <div class="btn">□</div>
+        <div class="btn">✕</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <p>Hola 👋</p>
+      <p>Esta es mi web personal para testear gueas.</p>
+      <p>Aquí voy a mostrar mis proyectos, ideas y cosas que me gustan.</p>
+      <p>Estado: en construcción 🛠️</p>
+    </div>
+  </div>
+  <!-- FIN VENTANA ABOUT -->
+   <!-- Puedes agregar más ventanas o contenido aquí -->
+  <div class="window" style="top: 220px; left: 520px; width: 300px;">
+    <div class="title-bar">
+      <span>Proyectos.txt - Word</span>
+      <div class="buttons">
+        <div class="btn">—</div>
+        <div class="btn">□</div>
+        <div class="btn">✕</div>
+      </div>
+    </div>
+    <div class="content">
+  <a href="blog.html" class="link">gamejams</a><br>
+  <a href="portfolio.html" class="link">emuladores pa culturizar</a><br>
+  <a href="https://www.youtube.com/@smlscom" class="link">Mi canal de YouTube</a>
+</div>
+
+  </div>
+
 </body>
 </html>
